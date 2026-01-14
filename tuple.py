@@ -1,0 +1,5 @@
+a=()
+b=(2,)
+c=(1,2,5,"j")
+print(c)
+print(c.index(5))
