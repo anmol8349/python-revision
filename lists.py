@@ -14,6 +14,13 @@ l2=[5,6,8]
 
 
 
+count =0
+for num in l2:
+    count+=1
+    
+print(count)
+
+
 l3=[]
 
 for i in range(7):
@@ -21,3 +28,6 @@ for i in range(7):
     
   
 print(l3)
+
+
+
