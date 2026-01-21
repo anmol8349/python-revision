@@ -1,0 +1,186 @@
+s1 = "Hello"
+s = 'Python'
+s3 = """This is
+multi-line
+string"""
+
+
+# print(s3)
+
+a = 'Anmol'
+b = "gupta"
+
+c=a+" "+b
+print(c)
+
+print(s[0])   # P
+print(s[3])   # H
+print(s[5])   # n
+
+# end is not included
+
+
+s = "PYTHON"
+
+print(s[0:3])   # PYT
+print(s[2:5])   # THO
+print(s[:4])    # PYTH
+print(s[3:])    # HON
+print(s[:])     # PYTHON
+
+
+# reverse
+
+print(s[::-1]) # NOHTYP
+
+
+print(s[::2])   # PTO    with step (every 2nd char)
+print(s[::-1]) # NOHTYP (reverse)
+
+
+s = "hello"
+# s[0] = "H"   # ❌ ERROR 
+
+s = "H" + s[1:]
+print(s)     # Hello
+
+
+print(len(s))
+
+print("Hi " * 3)   # Hi Hi Hi 
+
+
+
+s = "Python Programming"
+
+print("Python" in s)     # True
+print("Java" in s)       # False
+print("Java" not in s)  # True
+
+
+
+s = "PyThOn"
+
+print(s.lower())     # python
+print(s.upper())     # PYTHON
+print(s.title())     # Python
+print(s.capitalize()) # Python
+
+
+
+# ------------  remove space  ------
+
+s = "   hello   "
+
+# print(s.strip())    # "hello"
+# print(s.lstrip())   # left remove
+print(s.rstrip())   # right remove
+
+
+
+# ------------------
+
+
+s = "banana"
+
+print(s.find("a"))     # 1 (first position)
+print(s.rfind("a"))    # 5 (last position)
+print(s.count("a"))    # 3
+
+
+print(s.find("z"))   # -1
+
+
+s = "I like Java"
+print(s.replace("Java", "Python"))
+
+# --------------------------
+
+
+s = "apple,banana,orange"
+
+fruits = s.split(",")
+print(fruits)
+# ['apple', 'banana', 'orange']
+
+s5= "one two three four"
+print(s5.split(" ", 2))  # two splits only
+
+s6 = "one two three four"
+
+print(s6.split(" ", 1))
+print(s6.rsplit(" ", 1))  # from right
+
+
+sentense=" ".join(fruits)
+print(sentense)
+
+
+url = "www.google.com"
+parts = url.split(".")
+print(parts[-1])   # com
+
+
+s = "Python123"
+
+print(s.isalpha())   # False (letters only?)
+print(s.isdigit())   # False (digits only?)
+print(s.isalnum())   # True  (letters + digits)
+print(s.isspace())   # False
+print(s.islower())   # False
+print(s.isupper())   # False
+
+
+
+# -----------------------------
+
+a = "apple"
+b = "banana"
+
+print(a == b)    # False
+print(a < b)     # True (alphabet order)
+# Comparison is done by ASCII / dictionary order
+
+
+
+# loooop in string --------------
+
+
+s = "Python"
+
+for ch in s:
+    print(ch)
+
+
+for i in range(len(s)):
+    print(i, s[i])   #WITH INDEX
+    
+
+
+# =----------------- check pallindrome
+    
+    
+s = "madam"
+
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+
+# ----------------------count vowel 
+
+s = "programming"
+count = 0
+
+for ch in s:
+    if ch in "aeiouAEIOU":
+        count += 1
+
+print("Vowels:", count)
+
+
+# ------------ remove space--------
+
+s = "hello world"
+print(s.replace(" ", ""))
